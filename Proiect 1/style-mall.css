@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
+body {
+    background: url('https://thumbs.dreamstime.com/b/luxury-department-store-shopping-mall-interior-abstract-defocused-blur-bokeh-background-concept-seasons-design-156729476.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.header {
+    margin-top: 60px;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+    font-weight: 900px;
+    color: blanchedalmond;
+    background-color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle {
+    color: #999;
+    margin-bottom: 1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    line-height: 1em;
+    color: beige;
+    background-color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu {
+    width: 990px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 10px 40px 10px 40px;
+    background: beige;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #999;
+    vertical-align: bottom;
+}
+
+.hello{
+    background: beige;
+    width: 990px;
+    margin: 0 auto 30px auto;
+    padding: 30px 20px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 6px #c0392b;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.welcome{
+    font-size: 2em;
+    text-align: center;
+}
+
+.mymall{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.why-a{
+    padding: 20px;
+    display:none;
+}
+
+.why-q{
+    text-decoration: underline overline;
+    font-size: 1.5em;
+}
+
+.why-q:hover + .why-a{
+        display:block;
+        font-style: italic;
+}
+
+.where-a{
+    padding: 20px;
+    display:none;
+}
+
+.where-q{
+    text-decoration: underline overline;
+    font-size: 1.5em;
+    text-align:end;
+}
+
+.where-q:hover + .where-a{
+        display:block;
+        font-style: italic;
+        text-align: end;
+}
+
+.waiting{
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.shopping {
+    padding: 0 6px;
+    width: 24.99999%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+  }
+
+.program{
+    display:none;
+    text-align: center;
+}
+.shopping:hover{
+    border: 1px solid #777;
+  }
+  
+.shopping img {
+    width: 100%;
+    height: auto;
+  }
+
+.desc:hover + .program{
+    display:block;
+    color: black;
+    font-style: italic;
+}
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.call{
+    margin: 20px;
+}
+
+.feedback{
+    font-size: 1.3em;
+}
+
+.contact{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px;
+    background: black;
+    color: white;
+}
+
+.events{
+    display:flex;
+    background: white;
+    border: 1px solid greenyellow;
+    box-shadow: 0px 6px greenyellow;
+    border-radius: 0px 0px 4px 4px;
+}
+
+#targ{
+    order: 1;
+    border: 0.5px solid greenyellow;
+    width: 300px;
+    height: 200px;
+}
+
+.event1{
+    color: black;
+    margin: 30px 30px 30px 30px;
+}
+
+.event-desc{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.italic{
+    display: inline-block;
+    font-style: italic;
+    font-size: 1.07em;
+}
+
+.container {
+    width:750px;
+    height:700px;
+    overflow:hidden;
+    position:relative;
+    margin-left:100px;
+    margin-right: 100px;
+}
+
+.here{
+    margin-top: -100px;
+}
+
+.container img{
+    position:absolute;
+    animation:container 25s infinite;
+    opacity:0;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes container {25%{opacity:1;} 40%{opacity:0;}}
+.container img:nth-child(1){animation-delay:0s;}
+.container img:nth-child(2){animation-delay:5s;}
+.container img:nth-child(3){animation-delay:10s;}
+.container img:nth-child(4){animation-delay:15s;}
+.container img:nth-child(5){animation-delay:20s;}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: space-around;
+  }
+
+@media (max-width: 768px) {
+    .header{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    .footer {
+        margin-top: 3px;
+    }
+    .menu {
+        display: block;
+        margin: 0;
+        width: 86.4%;
+        margin-left: 5.7%;
+        margin-right: 10%;
+    }
+    .menu-item {
+        display: block;
+        padding: 15px 40px 15px 40px;
+        border-top: 1px solid #ccc;
+        text-align: center;
+    }
+    .hello{
+        display: block;
+        background: beige;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        padding: 15px 40px 15px 40px;
+        border: 1px solid #f1f1f1;
+        box-shadow: 0px 6px #c0392b;
+    }
+    
+    .why-a{
+        padding: 0px;
+        display:block;
+        font-style: italic;
+        text-align: start;
+    }
+    
+    .why-q{
+        text-decoration: underline overline;
+        font-size: 1.5em;
+        text-align: start;
+    }
+    
+    .where-a{
+        padding: 0px;
+        display:block;
+        font-style: italic;
+        text-align: end;
+    }
+    
+    .program{
+        display: block;
+        text-align: center;
+    }
+    
+    .here{
+        margin-top: 0px;
+    }
+    
+    .container{
+        display: none;
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+      }
+
+    .events{
+        flex-direction: column-reverse;
+    }
+
+    #targ{
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1260px) {
+    .header{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    .footer {
+        margin-top: 3px;
+    }
+    .menu {
+        display: block;
+        margin: 0;
+        width: 86.4%;
+        margin-left: 5.7%;
+        margin-right: 10%;
+    }
+    .menu-item {
+        display: block;
+        padding: 15px 40px 15px 40px;
+        border-top: 1px solid #ccc;
+        text-align: center;
+    }
+    .hello{
+        display: block;
+        background: beige;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        padding: 15px 40px 15px 40px;
+        border: 1px solid #f1f1f1;
+        box-shadow: 0px 6px #c0392b;
+    }
+    
+    .why-a{
+        padding: 0px;
+        display:block;
+        font-style: italic;
+        text-align: start;
+    }
+    
+    .why-q{
+        text-decoration: underline overline;
+        font-size: 1.5em;
+        text-align: start;
+    }
+    
+    .where-a{
+        padding: 0px;
+        display:block;
+        font-style: italic;
+        text-align: end;
+    }
+    
+    .program{
+        display: block;
+        text-align: center;
+    }
+    
+    .here{
+        margin-top: 0px;
+    }
+    
+    .container{
+        display: none;
+    }
+
+    .grid-container{
+        grid-template-columns: auto auto;
+      }
+
+    .events{
+        flex-direction: column-reverse;
+    }
+
+    #targ{
+        align-self: center;
+    }
+}
