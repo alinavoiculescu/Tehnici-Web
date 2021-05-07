@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-mall.css">
+    <title>My Mall</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">MyMall</h1>
+        <h3 class="subtitle">Simply the best.</h3>
+    </header>
+
+    <nav class="menu">
+        <a class="menu-item" href="mall.html">Acasă</a>
+        <a class="menu-item" href="shopping.html">Shopping</a>
+        <a class="menu-item" href="restaurante.html">Restaurante</a>
+        <a class="menu-item" href="evenimente.html">Evenimente</a>
+        <a class="menu-item" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hello">
+        <h2>Magazine dorite de clienți în mall-ul nostru:</h2>
+        <br>
+        <input id="name" placeholder="Nume">
+        <input id="image" placeholder="Imagine (URL)">
+        <button onclick="addShop()" id="addShop">Adaugă magazin</button>
+        <button onclick="editShop()">Salvează edit-ul</button>
+        <button id="refresh">Reîncarcă pagina</button>
+
+        <script src="java.js"> </script>
+
+        <br> <br>
+        <input id="filter" onkeyup="filterByCategory()" placeholder="Filter by category...">
+        <br> <br>
+        <div id="content">
+    
+        </div>
+        
+        <script src="script.js"> </script>
+        
+        <h2 class="alignCenter">Adaugă și tu magazinul favorit!</h2>
+        <h5 class="alignCenter">P.S.: Avem nevoie de numele corect al magazinelor, precum și de logo-ul acestora. Dacă identificați o eroare în informațiile prezentate anterior, vă rugăm să nu ezitați să o corectați! Vă mulțumim!</h5>
+        
+        <footer class="footer">
+            <hr>
+            <p class="find-us">
+                <h6> Pagină web: <a href="mall.html">http://www.MyMall.ro/</a><br>
+                E-mail: centru@mymall.ro<br>
+                Telefon: +40712384293<br>
+                Adresă: Complexul My Mall<br>
+                Strada Magazinelor 1, București 3, 035753</h6></p>
+            <hr>
+            <p id="copyright">Copyright ©2021 All Rights Reserved: MyMall.ro</p>
+        </footer>
+    </div>
+
+
+        
+</body>
+
+</html>
